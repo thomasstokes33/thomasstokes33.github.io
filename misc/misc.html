@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miscellaneous</title>
+    <link rel="stylesheet" href="../styles.css">
+
+  
+  </head>
+  <body>
+    <p><a class="default-border simple-fill" href="../index.html">Home</a></p>
+    <h1>Essen (und Getränke)!</h1>
+    <h2>To try...</h2>
+    <h3>Süß</h3>
+    <ul>
+      <li>Streuseltaler (topped with Streusel) ✅ Fucking delectable - tried it with Mum and Dad</li>
+      <li>Zwetschgenknödel (mini Germknödel) ✅</li>
+      <li>Germknödel ✅</li>
+      <li>Plunderstollen</li>
+      <li>Hefezopf</li>
+      <li>Rosinenstute</li>
+      <li>Streuselkuchen</li>
+      <li>Berliner gefüllt - filled doughnut</li>
+      <li>Bamberger Hörchen</li>
+      <li>Butterkuchen</li>
+      <li>Franz. (Französisch) Apfelkuchen</li>
+      <li>Apfeltasche</li>
+      <li>Willi Vanilli</li>
+      <li>Quarkbällchen ✅</li>
+      <li>Kaiserschmarrn ✅</li>
+      <li>Apfelstrudel ✅</li>
+    </ul>
+    <h3>Savoury</h3>
+
+    <ul>
+      <li>Currywurst! ✅</li>
+      <li>Laugenstange (a pretzel stick) ✅</li>
+      <li>Bretzel/Bretzen (latter in Bavaria) ✅</li>
+      <li>Schupfnudeln (dumpling/thick noodle, a bit like gnocchi) ✅</li>
+      <li>Kohlrabi ✅</li>
+      <li>Fleischsalat (chopped-wurst and pickle salad) ✅</li>
+      <li>Fasskraut (in a jar) and Sauerkraut ✅ I prefer the latter</li>
+      <li>Haxe ✅</li>
+      <li>Langosh (von Ungarn - fried flatbread with cheese and mushrooms) ✅</li>
+      <li>Spaetzle mit Linsen und Wurst (Wurst with lentils and doughy pasta-like noodles) ✅</li>
+      <li>Schweinebraten (Roast pork) ✅</li>
+      <li>Gözleme (von Türkiye - Spinach-filled, thin flatbread) ✅</li>
+      <li>Maultasche (pasta pockets)</li>
+      <li>Schwammerlbrühe (mushroom soup with dumplings) ✅</li>
+      <li>Grießnockerl-Suppe ✅ I made these semolina dumplings for a soup</li>
+      <li>Leberknödelsuppe ✅</li>
+      <li>Obatzda (mixture of cheeses) ✅</li>
+      <li>Pfannkuchensuppe ✅</li>
+      <li>Schnitzel ✅ mit zitrone and paprika</li>
+      <li>Weißwurst mit süßer Senf (white boiled sausage with sweet mustard) ✅</li>
+      <li>Schnitzel ✅ (mit Zitrone und, außerdem, Paprika) </li>
+      <li>Drehspieß Hähnchen (rotisserie chicken) ✅</li>
+      <li>Brötchen (just a bread roll) ✅</li>
+      <li>Saumagen</li>
+      <li>Zwiebelkuchen mit Neuerwein✅</li>
+    </ul>
+    <h1>Sprache</h1>
+    <h1>Web</h1>
+    <h2>Html entities</h2>
+    <p>There are three reserved characters in HTML: &lt; &gt; and &amp;. You
+      should always use HTML entities for these three characters. HTML entities can't be represented by plain text.</p>
+    <h2>Quotes</h2>
+    <p>The basic quotes are straight lines that don't hug the text: ' and ". If you want the &lsquo;singles&rsquo; and &ldquo;doubles&rdquo; to hug, then you need to use entities.</p>
+    <ul>
+      <li> <strong>&amp;ldquo; </strong> + <strong> &amp;rdquo; </strong>for doubles</li>
+      <li><strong>&amp;lsquo; </strong>+<strong> &amp;rsquo; </strong>for doubles</li>
+    </ul>  
+    <h2>Page specific styling</h2>
+    <pre><code>&lt;style&gt; <br>  body { <br>    color: #0000FF;    /* Blue */ <br>  }  <br>&lt;/style&gt;</code>
+    </pre>
+    
+    <h2>Padding vs border vs margin</h2>
+    <p>The content is defined in the html. The padding surround this and takes the same background colour as the content. You can define this in a variety of units 
+      and methods (the same methods apply to margin and border):</p>
+    <ul>
+      <li>You can define the padding for all sides with one value: <code>padding: 2em;</code></li>
+      <li>You can define the vertical padding (same for the top and bottom) and the horizontal padding (same for each side): <code>padding: 20px 30px;</code></li>
+      <li>You can define clockwise, starting at the top: <code>padding: 20px 0 30px 35px; /* The top is 20px; the right has no padding, etc. */</code></li>
+      <li>You can define individually with <code>padding-bottom: 10px;</code></li>
+    </ul>
+    <p>For the border, you add a line around the padding. If you use the dashed, you can see that behind is the background-color still. The format is 
+      <code>border: <em>thickness style colour</em></code>.  </p>
+    <p>Margins surround the border and work like the margin but with some caveats: they don't take the background-color; they collapse vertically; 
+      and they are not part of the click area</p>
+    <h2>Inline vs block</h2>
+    <p>Inline boxes don't affect vertical spacing and width is determined by its content. The block elements can influence layout, their height is defined by 
+      their content, the width is set by the parent and block content always appear below the previous block element. </p>
+    
+    <h2>Preventing margin collapse</h2>
+    <p>Pop an invisible element between them like so:</p>
+    <pre><code>&lt;div style='padding-top=1px;'&gt;&lt;div&gt;</code></pre>
+    <p>If you don't mind the background-color changing then you could use padding as that never collapses.</p>
+    <h2>Alignment</h2>
+    <p>Text alignment differs to block alignment. The former can be set with <code>text-alignment</code>, whilst the latter
+      can be set using auto-centering, floats or flexboxes. 
+    </p>
+    <p>To auto center, you use a horizontal margin of auto and this will center the block element. This <strong>requires</strong>
+      that a width is set, otherwise the content will fill the whole width and the margin will be zero, on both sides.
+    </p>
+    <h2>Single bullpoint facts</h2>
+      <ul>
+        <li>If the contrast is too high, it can make a page appear to vibrate: a distraction, we don't want!</li>
+        <li>Don't put anything within ul or ol except li.</li>
+        <li>Don't put ul inside of a p tag.</li>
+        <li>The <em>em</em> is the current font size of the element in question. Font size refers to the height of an lowercase letter.</li>
+        <li>Checkout this <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image">link</a> to MDN to produce custom bullet points!</li>
+        <li>If you have multiple stylesheets defined in the <code>link</code> tag, the latter ones take precedence &mdash; as if the stylesheets were appended to each other in the order of
+        definition.</li>
+        <li>Inline elements ignore vertical margins (eg. <code>padding: 40px;</code> would only apply 40px either side). Padding will display vertically but won't affect
+        the layout.</li>
+        <li>If you have two adjecent block elements, one with bottom and the other with top margins, only the biggest margin between them is used. This is known as vertical margin collapse.</li>
+        <li>The only real difference between a &lt;div&gt; and a &lt;span&gt; is that the former is for block-level content while the latter is meant for inline content.</li>
+        <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space" target='_blank'>white-space</a> CSS element influences how white space within an element is handled. This <a href="https://www.paulvandendool.nl/2021/01/02/white-space#:~:text=white%2Dspace%3A%20break%2Dspaces%3B&text=It%20will%20break%20on%20new,those%20spaces%20will%20%E2%80%9Chang%E2%80%9D." target='_blank'>article</a> is good.</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target='_blank'>Overflow</a> handles overflow 😂 is it hidden, can you scroll, etc. </li>
+        <li>The CSS width property only applies to the content, so padding and margin are extra, unless you set <code>box-sizing</code> to <code>border-box</code>.</li>
+        <li>Order of the css in the stylesheet matters. Later rules overrule. However, order within the <code>class</code> tag do <strong>not</strong> matter.</li>
+      </ul>
+
+  </body>
+</html>

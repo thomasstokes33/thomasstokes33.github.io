@@ -1,0 +1,111 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    color: #414141; /* Dark gray */
+    background-color: #f2f3eb;    /* Light gray */
+    font-size: 18px;
+ 
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: normal; /* font weight can be bold. font-style can be italics*/
+    margin-top: 10px;
+    margin: 20px 10px;
+}
+
+h1 {
+    size: 2em;
+    font-weight: bold;
+    background-color: #e2d1d1b8;
+    padding: 20px 30px; /*vertical horizontal */
+    border: 2px solid  rgb(93, 95, 78); /* Width style (eg. dashed, solid) */
+    text-align: center;
+}
+
+h2 {
+    size: 1.5em;
+}
+
+
+ul, ol {
+   
+    padding-left: 40px;
+    margin: 18px 0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+a {
+    text-decoration: none; /*can be line-through*/
+} 
+
+pre {
+    border: 1px solid #ddd;
+    max-width: fit-content;
+    display: block;
+    margin-left: 10px;
+}
+
+strong {
+    display: inline; /*The default is inline, but if you change to block then it can influence layout. */
+}
+
+p {
+    margin: 18px 0;
+    padding-left: 10px;
+}
+
+
+.center-with-border {
+    text-align: center;
+    border-radius: 5px;
+    border: 1px saddlebrown solid;
+}
+
+
+
+.button {
+    border: 2px solid #5D6063;
+    border-radius: 2px;
+    background-color: #dc9f25a6;    
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    box-sizing: border-box; /* This means that the border and padding are included in the width value. */
+    display: block;
+
+}
+
+.default-border{
+    border: 2px solid #5D6063;    /* Dark gray */
+    border-radius: 2px;
+}
+
+.simple-fill {
+    background-color: #cdcbc7a6;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* .anchor-button {
+    display: block;
+    
+    background-color: #dc9f25a6;    
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    box-sizing: border-box; 
+} */
