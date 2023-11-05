@@ -36,7 +36,7 @@ h2 {
 
 ul, ol {
    
-    padding-left: 40px;
+    padding-left: 40px; /*This is what brings the bullet points accross.*/
     margin: 18px 0;
 }
 
@@ -60,7 +60,7 @@ strong {
 }
 
 p {
-    margin: 18px 0;
+    margin: 15px 0;
     padding-left: 10px;
 }
 
@@ -109,3 +109,14 @@ p {
     margin: 20px auto;
     box-sizing: border-box; 
 } */
+
+
+.fun-fact {
+    font-style: italic;
+    margin-left: 40px;
+    border-left: #414141 solid 1px;
+}
+
+.fun-fact em {
+    font-style: normal;
+}
