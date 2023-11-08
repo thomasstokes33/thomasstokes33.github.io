@@ -48,6 +48,29 @@ a {
     text-decoration: none; /*can be line-through*/
 } 
 
+a:link{
+    color:#2939b3;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0a0a0a;
+} 
+/*visited, hover, active and link are possible pseudo classes. link just means unclicked link. */
+
+
+a:active {
+    color: rgb(150, 145, 145);
+}
+
+a:visited:hover {  /*If you set this and also have an "active" pseudo class in use, then it stops working for visited links unless you add the below */
+    color: orange;
+}
+
+a:visited:active {
+    color: rgb(150, 145, 145);
+}
 pre {
     border: 1px solid #ddd;
     max-width: fit-content;
