@@ -55,21 +55,21 @@ a:link{
 a:hover {
     cursor: pointer;
     text-decoration: underline;
-    color: #0a0a0a;
+    color: #8a91d5;
 } 
 /*visited, hover, active and link are possible pseudo classes. link just means unclicked link. */
 
 
 a:active {
-    color: rgb(150, 145, 145);
+    color: rgb(187, 201, 217);
 }
 
-a:visited:hover {  /*If you set this and also have an "active" pseudo class in use, then it stops working for visited links unless you add the below */
+a:visited:hover {  /*If you set this and also have an "active" pseudo class in use, then the 'active' stops working for visited links unless you add the visited:active */
     color: orange;
 }
 
 a:visited:active {
-    color: rgb(150, 145, 145);
+    color: rgb(229, 183, 131);
 }
 pre {
     border: 1px solid #ddd;
@@ -87,6 +87,9 @@ p {
     padding-left: 10px;
 }
 
+/* p:last-of-type {
+    margin-bottom: 50px;
+} */
 
 .center-with-border {
     text-align: center;
