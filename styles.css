@@ -146,3 +146,36 @@ p {
 .fun-fact em {
     font-style: normal;
 }
+
+img {
+    width: 30vw;
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 10px ;
+}
+
+.float-container {
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+.float-container .float-left {
+    width: auto;
+    float: left;
+    padding: 10px;
+    height: 20vw;
+}
+
+.float-right {
+    float: right;
+}
+
+.smaller-image {
+    width: 10vw;
+}
+
+.medium-image {
+    height: 20vw;
+    width: auto;
+}
