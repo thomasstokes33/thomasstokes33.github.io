@@ -115,17 +115,28 @@
         definition/declaration.</li>
         <li>Inline elements ignore vertical margins (eg. <code>padding: 40px;</code> would only apply 40px either side). Padding will display vertically but won't affect
         the layout.</li>
-        <li>If you have two adjecent block elements, one with bottom and the other with top margins, only the biggest margin between them is used. This is known as vertical margin collapse.</li>
-        <li>The only real difference between a &lt;div&gt; and a &lt;span&gt; is that the former is for block-level content while the latter is meant for inline content.</li>
-        <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space" target='_blank'>white-space</a> CSS element influences how white space within an element is handled. This <a href="https://www.paulvandendool.nl/2021/01/02/white-space#:~:text=white%2Dspace%3A%20break%2Dspaces%3B&text=It%20will%20break%20on%20new,those%20spaces%20will%20%E2%80%9Chang%E2%80%9D." target='_blank'>article</a> is good.</li>
+        <li>If you have two adjecent block elements, one with bottom and the other with top margins, only the biggest margin
+                 between them is used. This is known as vertical margin collapse.</li>
+        <li>The only real difference between a &lt;div&gt; and a &lt;span&gt; is that the former is for block-level
+                content while the latter is meant for inline content.</li>
+        <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space" target='_blank'>white-space</a> CSS element
+                influences how white space within an element is handled. This
+                <a href="https://www.paulvandendool.nl/2021/01/02/white-space#:~:text=white%2Dspace%3A%20break%2Dspaces%3B&text=It%20will%20break%20on%20new,those%20spaces%20will%20%E2%80%9Chang%E2%80%9D." target='_blank'>article</a> is good.</li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target='_blank'>Overflow</a> handles overflow 😂 is it hidden, can you scroll, etc. </li>
         <li>The CSS width property only applies to the content, so padding and margin are extra, unless you set <code>box-sizing</code> to <code>border-box</code>.</li>
-        <li>Order of the css in the stylesheet matters. Later rules overrule. However, order within the <code>class</code> tag do <strong>not</strong> matter.</li>
-        <li>The order of declaratied of pseudo classes, on elements like <code>&lt;a&gt;</code></li>
+        <li>Order of the css in the stylesheet matters. Later rules overrule. For example, if you have class <em>.first</em>
+                and class <em>.second</em>, which both define <em>color</em>  apply both of them However, order within the <code>class</code> tag does <strong>not</strong> matter.</li>
+        <li>You can nest rules (called descendant selectors): <code>.synopsis em</code> would set the styling for
+                the emphasis text if it is within a synopyis tag.</li>
+        <li>The order of declaration of pseudo classes, on elements like <code>&lt;a&gt;</code> matters. Because the more specific rules override
+                <code>:active</code> should be after <code>:hover</code>
+        </li>
         <li>The <code>:first-of-type</code> pseudo classes only apply within their parent class. It can help to restrict it to a 
           certain class, like this <code>.page &gt; p:first-of-type {}</code>. The <em>&gt;</em> means to match only the second item that is a direct
-          descendant of the first item.
+          descendant of the first item. Soooo, if you have a <code>p</code> within a <code>li</code>, that is nested within the .page class
+          , it will not get the styling.
         </li>
+        <li>The rule <code>ul.abc</code> only applies to ul elements with the abc class.</li>
       </ul>
       <a class="button" href="../index.html">Home</a>
   </body>

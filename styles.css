@@ -64,7 +64,9 @@ a:active {
     color: rgb(187, 201, 217);
 }
 
-a:visited:hover {  /*If you set this and also have an "active" pseudo class in use, then the 'active' stops working for visited links unless you add the visited:active */
+a:visited:hover {
+        /*If you set this and also have an "active" pseudo class in use, then the 'active' stops working for
+        visited links unless you add the visited:active, because a:visited:hover is more specific.*/
     color: orange;
 }
 
