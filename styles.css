@@ -1,3 +1,4 @@
+/**Clear default styles**/
 * {
 margin: 0;
 padding: 0;
@@ -12,7 +13,7 @@ body {
 }
 
 
-
+/**Headings**/
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica", "Arial", sans-serif;
     font-weight: normal; /* font weight can be bold. font-style can be italics*/
@@ -44,6 +45,8 @@ ul {
     list-style-type: square;
 }
 
+
+/**Anchors**/
 a {
     text-decoration: none; /*can be line-through*/
 } 
@@ -73,6 +76,8 @@ a:visited:hover {
 a:visited:active {
     color: rgb(229, 183, 131);
 }
+
+/**pre-formatted**/
 pre {
     border: 1px solid #ddd;
     max-width: fit-content;
@@ -156,9 +161,31 @@ img {
     padding-left: 10px ;
 }
 
+
+.img-panel {
+    clear: both;
+    display: table;
+}
+.img-panel div {
+    width: 30vw;
+    float: left;
+    margin: 0 0 0 0;
+}
+
+.img-panel img {
+    display: inline;
+    margin: 0 0 0 0;
+    width: 30vw;
+}
+
+.img-panel p {
+    font-size: small;
+    margin: 0 0;
+}
+
 .float-container {
     overflow: hidden;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     
 }
 
@@ -166,7 +193,7 @@ img {
     width: auto;
     float: left;
     padding: 10px;
-    height: 20vw;
+    height: 30vh;
 }
 
 .float-right {
