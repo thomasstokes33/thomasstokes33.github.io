@@ -214,4 +214,6 @@ img {
         margin: 0 auto;
         width: 50vw ;   /* 100vw is the width of the screen */
         text-align: left;
+        height: auto;
+        display: block;
 }
