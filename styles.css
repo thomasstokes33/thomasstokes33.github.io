@@ -218,3 +218,13 @@ img {
         height: auto;
         display: block;
 }
+
+.title-with-caption {   /*Could've also used a div and then descendant or child combinators (see MDN)*/
+    margin: 20px 10px 0px 10px ;
+}
+
+h3.title-with-caption  {
+    margin: 0px 10px 20px 10px;
+    font-size: medium;
+    font-style: oblique;
+}
