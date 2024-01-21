@@ -165,9 +165,11 @@ img {
 .img-panel {
     clear: both;
     display: table;
+    width: fit-content;
+    margin: auto;
+
 }
 .img-panel div {
-    width: 30vw;
     float: left;
     margin: 0 0 0 0;
 }
@@ -175,7 +177,8 @@ img {
 .img-panel img {
     display: inline;
     margin: 0 0 0 0;
-    width: 30vw;
+    width: auto;
+    height: 40vh;
 }
 
 .img-panel p {
@@ -198,6 +201,8 @@ img {
 
 .float-right {
     float: right;
+    max-height: 40vh;
+    width: auto;
 }
 
 .smaller-image {
