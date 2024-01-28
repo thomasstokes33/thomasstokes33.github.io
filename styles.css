@@ -60,7 +60,8 @@ a:hover {
     text-decoration: underline;
     color: #8a91d5;
 } 
-/*visited, hover, active and link are possible pseudo classes. link just means unclicked link. */
+/*visited, hover, active and link are possible pseudo classes. link just means unclicked link. Order matters: eg. hover and active
+because if you are active and hovering, and hovering is the last declared rule, then the last rule applies, when you actually want it to be the active. */
 
 
 a:active {
