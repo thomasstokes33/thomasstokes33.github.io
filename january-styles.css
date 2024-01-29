@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.page {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px red solid;
+}
+
+.container {
+    background-color: hsl(212, 31%, 89%);
+    overflow: hidden;
+}
+.menu {
+    height: 100px;
+    background-color: #B2D6FF;    /* Medium blue */
+}
+
+.sidebar {
+    height: 300px;
+    width: 200px;
+    float: left;
+    background-color: #F09A9D;    /* Red */
+}
+
+.content {
+    height: 500px;
+    width: 650px;
+    float: left;
+    background-color: #F5CF8E;    /* Yellow */
+}
+
+.footer {
+    background-color: #D6E9FE;    /* Light blue */
+    overflow: hidden;
+}
+
+
+.footer-item {
+    float: left;
+    background: #4377b6;
+    width: 31%;
+    height: 160px;
+    margin: 20px 1.15%;
+}
