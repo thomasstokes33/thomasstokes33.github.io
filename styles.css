@@ -8,7 +8,7 @@ box-sizing: border-box;
 body {
     color: #414141; /* Dark gray */
     background-color: #f2f3eb;    /* Light gray */
-    font-size: 19px;
+    font-size: 1.3vw;
 }
 
 
@@ -16,28 +16,26 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica", "Arial", sans-serif;
     font-weight: normal; /* font weight can be bold. font-style can be italics*/
-    margin-top: 10px;
-    margin: 20px 10px;
+    margin-top: 0.625em;
+    margin: 0.8em 0.5em;
 }
 
 h1 {
     size: 2em;
     font-weight: bold;
     background-color: #e2d1d1b8;
-    padding: 20px 30px; /*vertical horizontal */
-    border: 2px solid  rgb(93, 95, 78); /* Width style (eg. dashed, solid) */
+    padding: 0.8em ; /*vertical horizontal */
+    border: 0.1em solid  rgb(93, 95, 78); /* Width style (eg. dashed, solid) */
     text-align: center;
 }
 
-h2 {
-    size: 1.5em;
-}
+
 
 
 ul, ol {
    
-    padding-left: 40px; /*This is what brings the bullet points accross.*/
-    margin: 18px 0;
+    padding-left: 3em; /*This is what brings the bullet points accross.*/
+    margin: 1em 0;
 }
 
 ul {
@@ -79,10 +77,10 @@ a:visited:active {
 
 /**pre-formatted**/
 pre {
-    border: 1px solid #ddd;
+    border: 0.5em solid #ddd;
     max-width: fit-content;
     display: block;
-    margin-left: 10px;
+    margin-left: 1em;
 }
 
 strong {
@@ -90,9 +88,9 @@ strong {
 }
 
 p {
-    margin: 15px 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 0.8em 0;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
 }
 
 /* p:last-of-type {
@@ -101,35 +99,35 @@ p {
 
 .center-with-border {
     text-align: center;
-    border-radius: 5px;
-    border: 1px saddlebrown solid;
+    border-radius: 1em;
+    border: 0.07em saddlebrown solid;
 }
 
 
 
 .button {
-    border: 2px solid #5D6063;
-    border-radius: 2px;
+    border: 0.1em solid #5D6063;
+    border-radius: 0.5em;
     background-color: #dc9f25a6;    
     font-weight: bold;
-    padding: 20px;
+    padding: 1.1em;
     text-align: center;
-    width: 200px;
-    margin: 20px auto;
+    width: 20em;
+    margin: 1em auto;
     box-sizing: border-box; /* This means that the border and padding are included in the width value. */
     display: block;
 
 }
 
 .default-border{
-    border: 2px solid #5D6063;    /* Dark gray */
-    border-radius: 2px;
+    border: 0.1em solid #5D6063;    /* Dark gray */
+    border-radius: 0.3em;
 }
 
 .simple-fill {
     background-color: #cdcbc7a6;
     font-weight: bold;
-    padding: 5px;
+    padding: 0.4em;
 }
 
 /* .anchor-button {
@@ -147,8 +145,8 @@ p {
 
 .fun-fact {
     font-style: italic;
-    margin-left: 40px;
-    border-left: #414141 solid 1px;
+    margin-left: 1.5em;
+    border-left: #414141 solid 0.01em;
 }
 
 .fun-fact em {
@@ -159,7 +157,7 @@ img {
     width: 30vw;
     display: inline-block;
     margin: 0 auto;
-    padding-left: 10px ;
+    padding-left: 0.4em ;
 }
 
 
@@ -196,7 +194,7 @@ img {
 .float-container .float-left {
     width: auto;
     float: left;
-    padding: 10px;
+    padding: 0.4em;
     height: 30vh;
 }
 
@@ -225,17 +223,16 @@ img {
 }
 
 .title-with-caption {   /*Could've also used a div and then descendant or child combinators (see MDN)*/
-    margin: 20px 10px 0px 10px ;
+    margin: 1em 1vh 0 0.5vw ;
 }
 
 h3.title-with-caption  {
-    margin: 0px 10px 20px 10px;
-    font-size: medium;
+    margin: 0 1vh 0 0.5vw;
     font-style: oblique;
 }
 
 figcaption {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     font-size: small;
 }

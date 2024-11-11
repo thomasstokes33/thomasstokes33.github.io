@@ -1,11 +1,11 @@
 .welcome-image {
     display: block;
-    margin: 1px auto;
+    margin: 1vw auto;
 }
 
 div {
     margin: 0 auto;
-    width: 50vw ;   /* 100vw is the width of the screen */
+    width: 70vw ;   /* 100vw is the width of the screen */
     text-align: left;
 }
 
